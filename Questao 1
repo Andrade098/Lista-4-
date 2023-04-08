@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+int matriz[4][4] = {{45, 32, 83, 95},
+                    {26, 14, 37, 42},
+                    {40, 43, 65, 77},
+                    {74, 79, 48, 55}};
+int soma = 0;
+float media = 0;
+
+  for (int i = 0; i < 4; i++) {
+  for (int j = 0; j < 4; j++) {
+      soma += matriz[i][j];
+    }
+  }
+
+  media = (float)soma / 16;
+
+printf("A média aritmética dos valores da matriz é: %.2f", media);
+
+  return 0;
+}
