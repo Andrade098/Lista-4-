@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+  int matriz[4][4] = {{45, 32, 83, 95},
+                      {26, 14, 37, 42},
+                      {40, 43, 65, 77},
+                      {74, 79, 48, 55}};
+  int soma1 = 0, soma2 = 0;
+  
+  // Soma os valores da primeira linha 
+  for (int i = 0; i < 4; i++) {
+    soma1 += matriz[1][i];
+  }
+
+  // Soma os valores da segunda linha 
+  for (int i = 0; i < 4; i++) {
+    soma2 += matriz[3][i];
+  }
+
+  printf("A soma dos valores da primeira linha é: %d\n", soma1);
+  printf("A soma dos valores da segunda linha é: %d\n", soma2);
+
+  if (soma1 > soma2) {
+    printf("A maior soma é: %d", soma1);
+  } else if (soma2 > soma1) {
+    printf("A maior soma é: %d", soma2);
+  } else {
+    printf("As somas são iguais: %d", soma1);
+  }
+
+return 0;
+}
